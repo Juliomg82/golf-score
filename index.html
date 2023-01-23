@@ -9,8 +9,29 @@
 <body>    
     
     <h1>Golf Score</h1>
-    <p>Ver los resultados en la consola</p>      
-
+    <p>Funcion creada con dos parámetros llamada golfScore(par, strokes);</p>
+    <p>Abre la consola de tu navegador y modifica los parametros siendo:</p>
+    <ul>
+        <li>par: número de golpes esperados para meter la pelota en el hoyo desde tu posicion</li>
+        <li>strokes: número de golpes que has necesitado para meter la bola en el hoyo</li>
+        <li>La función compara los dos datos introducidos y según el resultado muestra el resultado.</li>
+    </ul>
+    <h2>Puntuaciones en golf: segun los golpes datos(strikes) comparados con los esperados (par)</h2>
+    <table class="table table-striped">
+        <thead><tr><th>Strokes</th><th>Return</th></tr></thead>
+        <tbody>
+            <tr><td>1</td><td>"Hole-in-one!"</td></tr>
+            <tr><td>&lt;= par - 2</td><td>"Eagle"</td></tr>
+            <tr><td>par - 1</td><td>"Birdie"</td></tr>
+            <tr><td>par</td><td>"Par"</td></tr>
+            <tr><td>par + 1</td><td>"Bogey"</td></tr>
+            <tr><td>par + 2</td><td>"Double Bogey"</td></tr>
+            <tr><td>&gt;= par + 3</td><td>"Go Home!"</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Ejemplo: golfScore(4, 9); siendo 4 los golpes esperados y nueve los necesitados hasta introducir la bola.</p>      
+<p>Si necesitamos 9 golpes para meter la bola y se esperaban 4 nuestra puntuacion es +5 y tiene un nickname Go Home! pues siempre que necesitemos mas de 3 golpes de lo esperado es la que obtendremos.</p>
 <script src="./js/index.js"></script>    
 </body>  
 </html>
