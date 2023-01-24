@@ -3,6 +3,8 @@ const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey"
 
 function golfScore(par, strokes) {
 
+    console.log('funcion ejecutada');
+
     if (strokes == 0 || par == 0) {
         
         return 'Los valores deben ser mayores de 0 en ambos casos';
